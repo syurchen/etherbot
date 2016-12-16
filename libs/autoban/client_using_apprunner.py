@@ -45,6 +45,7 @@ class MyAppSession(ApplicationSession):
         monitor_events = ["BTC_ZEC", "BTC_ETH", "BTC_XMR", "BTC_REP"]
         if args[1] in monitor_events:
             print( args[1] + ' = ' + args[2])
+        print( args[1] + ' = ' + args[2])
 
 def start_ticker():
     session = MyAppSession(ComponentConfig(u'realm1', {}))

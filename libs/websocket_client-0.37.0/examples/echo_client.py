@@ -3,9 +3,8 @@ import websocket
 
 if __name__ == "__main__":
     websocket.enableTrace(True)
-    ws = websocket.create_connection("wss://api.poloniex.com ")
-    print("Sending 'Hello, World'...")
-    ws.send("Hello, World")
+    ws = websocket.create_connection("wss://ztest.iptelefon.su:8081")
+    ws.send("sid=EXTERNAL-CONNECTION-AMOCRM&uid=555400006&service=monitor&command=update&params=0001566")
     print("Sent")
     print("Receiving...")
     result = ws.recv()
